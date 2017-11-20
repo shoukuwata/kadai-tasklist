@@ -1,8 +1,8 @@
-<h1>id = <%= @tasks.id %>の詳細ページ</h1>
+<h1>id = <%= @task.id %>の詳細ページ</h1>
 
-<p>題名: <%= @tasks.status %></p>
-<p>タスク: <%= @tasks.content %></p>
+<p>題名: <%= @task.status %></p>
+<p>タスク: <%= @task.content %></p>
 
 <%= link_to "一覧に戻る", tasks_path %>
-<%= link_to "このタスクを編集する", edit_task_path(@tasks) %>
-<%= link_to "このタスクを削除する", @tasks, method: :delete, data: { confirm: "本当によろしいですか" } %>
+<%= link_to "このタスクを編集する", edit_task_path(@task) %>
+<%= link_to "このタスクを削除する", @task, method: :delete, data: { confirm: "本当によろしいですか" } %>
